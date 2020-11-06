@@ -91,8 +91,8 @@ if (isset($_FILES) && $_FILES) {
 	$recordLength 		= isset($_POST['record_length'])	? (int)$_POST['record_length'] 	: '16';
 
 	// Build up the bin2hex params from the values posted from the html form
-	$customParams  = ' '.$offsetAddr; 				// Format the video size
-	$customParams .= ' '.$recordLength; 		    // Format the video bit rate
+	$customParams  = ' '.$offsetAddr;
+	$customParams .= ' '.$recordLength;
 	
 	// Check the uploaded mime type
 	if (in_array($_FILES["file"]["type"],$allowedMimeTypes ))
