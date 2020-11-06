@@ -88,7 +88,7 @@ if (isset($_FILES) && $_FILES) {
 
 	// Custom Params
 	$offsetAddr 		= isset($_POST['offset_addr']) 		? (string)$_POST['offset_addr'] : '0x8000000';
-	$recordLength 		= isset($_POST['record_length'])	? (int)$_POST['record_length'] 	: '16';
+	$recordLength 		= isset($_POST['record_length'])	? (string)$_POST['record_length'] 	: '16';
 
 	// Build up the bin2hex params from the values posted from the html form
 	$customParams  = ' '.$offsetAddr;
